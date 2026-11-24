@@ -1,0 +1,33 @@
+{
+  "name": "ipsieve",
+  "version": "1.0.0",
+  "description": "No dependency IPv4 CIDR allowlist check: parse once, test by mask, fail closed",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "url": "git+https://github.com/sdrsdr/ipsieve.git",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "tsc -p tsconfig.test.json && node --test test-build/tests/*.test.js",
+    "build": "tsc",
+    "prepublishOnly": "tsc; jsmin -o index.min.js index.js ; mv index.min.js index.js"
+  },
+  "keywords": [
+    "ip",
+    "cidr",
+    "allowlist",
+    "netmask",
+    "subnet"
+  ],
+  "author": "Shelly Group SE",
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "jsmin": "^1.0.1",
+    "typescript": "^7.0.2"
+  },
+  "contributors": [
+    "Stoyan Ivanov <stoyan.ivanov@shelly.com>"
+  ]
+}

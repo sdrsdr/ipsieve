@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+
+		"target": "es2019",
+		"module": "node16",
+		"moduleResolution": "node16",
+		"esModuleInterop": true,
+
+		"listEmittedFiles":true,
+
+		"strict": true,
+
+		"allowJs": false,
+		"strictNullChecks": true,
+		"alwaysStrict":true,
+		"noImplicitAny":true,
+		"noImplicitThis":true,
+		"noImplicitReturns": true,
+		"declaration": true,
+		"noFallthroughCasesInSwitch":true,
+		"lib": ["ES2019"],
+		"types": ["node"],
+		"rootDir": "./src",
+		"outDir": ".",
+	},
+	"include": [
+		"./src/*.ts",
+	],
+	"exclude": []
+}

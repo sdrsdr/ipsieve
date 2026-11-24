@@ -1,0 +1,10 @@
+/node_modules
+*.js
+*.d.ts
+/tsc
+/coverage
+*.tgz
+/.vscode
+/package-lock.json
+/tsc
+/test-build
